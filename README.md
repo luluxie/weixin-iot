@@ -8,7 +8,7 @@
 * 支持模拟微信运动精简协议
 
 ## 使用方法
-sudo node ble-simulator.js
+    sudo node ble-simulator.js
 
 ## 测试环境
 
