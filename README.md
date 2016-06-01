@@ -9,13 +9,14 @@
     sudo node ble-simulator.js
 
 ## 依赖
+
+推荐在Linux环境下运行，系统需要有蓝牙适配器和bluez蓝牙工具包。bleno库主要完成BLE设备的服务与特征值构建，在非Linux环境下运行时需要满足bleno的依赖条件。
+
 * bluez
 * libbluetooth-dev
 * nodejs
 * bleno
 * bleadvertise
-
-推荐在Linux环境下运行，系统需要有蓝牙适配器和bluez蓝牙工具包。bleno库主要完成BLE设备的服务与特征值构建，在非Linux环境下运行时需要满足bleno的依赖条件。
 
 ## 测试环境
 
