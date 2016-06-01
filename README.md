@@ -14,18 +14,19 @@
 要让微信运动可以添加该设备为数据源，还需要在微信硬件平台中录入该设备基本信息，图标，默认显示名称等。在申请到的公众号后台开通“设备功能”插件，即可以添加一款新设备。
 
 公众号需要做过微信认证，如果只是临时开发调试用，也可以使用公众号测试账号：
-http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
+
+    http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
 
 ### Step 4
 登记成功后会得到一个微信硬件的`型号编码`即`PRODUCT_ID`，准备好公众号的`appid`,`access_token`,设备`MAC`地址列表等。
 
 1. 通过调用微信的设备编号API接口，得到设备编号。
 
-`https://api.weixin.qq.com/device/getqrcode?access_token=ACCESS_TOKEN&product_id=PRODUCT_ID`
+    https://api.weixin.qq.com/device/getqrcode?access_token=ACCESS_TOKEN&product_id=PRODUCT_ID
 
 2. 通过调用微信的授权接口将设备`MAC`更新到设备编号上。
 
-`https://api.weixin.qq.com/device/authorize_device?access_token=ACCESS_TOKEN`
+    https://api.weixin.qq.com/device/authorize_device?access_token=ACCESS_TOKEN
 
 ## 依赖
 
