@@ -42,7 +42,7 @@ var BLE_LOCAL_NAME = 'WeChat BLE';
 // 蓝牙设备名称，与微信内显示的名称无关
 var DEVICE_NAME = '微信互联硬件';
 // 设备MAC地址，根据实际修改 <---------------------------------[重要] 
-var DEVICE_MAC_ADDR = '001A7DDA710A';
+var DEVICE_MAC_ADDR = 'XXXXXXXXXXXX';
 
 // 在运行环境变量中设置设备名称
 process.env['BLENO_DEVICE_NAME'] = DEVICE_NAME;
