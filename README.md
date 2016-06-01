@@ -1,6 +1,19 @@
 # 微信蓝牙协议模拟器
 基于对微信AirSync蓝牙协议的理解写的模拟器，主要用于演示BLE设备与微信的通讯原理，方便其它开发者快速了解和上手。
 
+微信有专属的蓝牙`Service`UUID，同时还有指定的特征值要实现才能被微信识别和发现。如果是开发微信运动精简协议，还需要多两个特征值。
+
+```javascript
+// 微信蓝牙服务和特征值专属UUID
+var WX_SERVICE_UUID = 'FEE7';
+var WX_CHARC_UUID_WRITE = 'FEC7';
+var WX_CHARC_UUID_INDICATE = 'FEC8';
+var WX_CHARC_UUID_READ = 'FEC9';
+// 微信运动精简协议专属UUID
+var WERUN_PEDOMETER_UUID = 'FEA1';
+var WERUN_TARGET_UUID = 'FEA2';
+```
+
 ## 主要特性
 * 微信运动
   - 支持模拟微信运动精简协议
