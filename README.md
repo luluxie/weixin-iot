@@ -9,7 +9,7 @@
 ### Step 1
     sudo node ble-simulator.js
 ### Step 2
-打开AirSyncDebugger工具`扫描`蓝牙设备, 点击`精简协议`, 点击`记步器测试`。
+打开AirSyncDebugger工具点击`扫描`蓝牙设备, 点击`精简协议`, 点击`记步器测试`。
 
 ## 依赖
 
