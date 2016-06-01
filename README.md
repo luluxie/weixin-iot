@@ -33,16 +33,15 @@ var WERUN_TARGET_UUID = 'FEA2';
 ### Step 3
 要让微信运动可以添加该设备为数据源，还需要在微信硬件平台中录入该设备基本信息，图标，默认显示名称等。在申请到的公众号后台开通“设备功能”插件，即可以添加一款新设备。
 
+公众号需要做过微信认证，如果只是临时开发调试用，也可以使用公众号测试账号：
+
+    http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
+
 添加设备时，需要指明接入方案:
 - 微信硬件云标准接入方案
 - 平台基础接入方案
 
 接入微信运动精简协议，选`平台基础接入方案`即可。 
-
-
-公众号需要做过微信认证，如果只是临时开发调试用，也可以使用公众号测试账号：
-
-    http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
 
 ### Step 4
 登记成功后会得到一个微信硬件的`型号编码`即`PRODUCT_ID`，准备好公众号的`appid`,`access_token`,设备`MAC`地址列表等。
