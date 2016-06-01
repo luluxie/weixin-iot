@@ -8,7 +8,14 @@
 ## 使用方法
     sudo node ble-simulator.js
 
-## 测试环境
+## 依赖
+* bluez
+* libbluetooth-dev
+* nodejs
+* bleno
+* bleadvertise
+
+## 快速上手
 
 代码已经在以下环境运行测试通过
 
