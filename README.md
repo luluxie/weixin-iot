@@ -38,4 +38,4 @@ OS | Ubuntu 14.04.4
 蓝牙模块 | CSR Bluetooth 4.0 USB module
  
 ## 备注
-AirSyncDebugger是微信提供的蓝牙协议调试工具
+AirSyncDebugger是微信提供的蓝牙协议调试工具。
