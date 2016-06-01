@@ -7,6 +7,7 @@
 
 ## 使用方法
 ### Step 1
+运行模拟器
     sudo node ble-simulator.js
 ### Step 2
 打开AirSyncDebugger工具点击`扫描`蓝牙设备, 点击`精简协议`, 点击`记步器测试`。测试通过后设备即可被微信发现，同时也支持了微信运动的接入。
