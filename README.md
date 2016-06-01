@@ -20,11 +20,11 @@
 ### Step 4
 登记成功后会得到一个微信硬件的`型号编码`即`PRODUCT_ID`，准备好公众号的`appid`,`access_token`,设备`MAC`地址列表等。
 
-1.通过调用微信的设备编号API接口，得到设备编号。
+  1.通过调用微信的设备编号API接口，得到设备编号。`PRODUCT_ID`即`型号编码`。
 
     https://api.weixin.qq.com/device/getqrcode?access_token=ACCESS_TOKEN&product_id=PRODUCT_ID
 
-2.通过调用微信的授权接口将设备`MAC`更新到设备编号上。
+  2.通过调用微信的授权接口将设备`MAC`更新到设备编号上。
 
     https://api.weixin.qq.com/device/authorize_device?access_token=ACCESS_TOKEN
 
