@@ -20,7 +20,7 @@ sudo node ble-simulator.js
 * bleno 版本 0.4.0
 * bleadvertise 版本 0.1.1
 
-### 硬件平台
+### 硬件环境
 
  | 参数
 ------------- | -----------
