@@ -7,7 +7,7 @@
  * bleno: 		版本 0.4.0
  * bleadvertise:	版本 0.1.1
  * 
- * [硬件平台]
+ * [硬件环境]
  * 平台:		Raspberry Pi 2 Model B
  * OS: 		Ubuntu 14.04.4
  * 内核: 	3.18.0-20-rpi2
