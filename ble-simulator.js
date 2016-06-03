@@ -41,8 +41,8 @@ var DEVICE_COMPANY_ID = '013A';
 var BLE_LOCAL_NAME = 'WeChat BLE';
 // 蓝牙设备名称，与微信内显示的名称无关
 var DEVICE_NAME = '微信互联硬件';
-// 设备MAC地址 <--------------------------------------------[重要] 
-var DEVICE_MAC_ADDR = bleno.address;
+// 设备MAC地址 
+var DEVICE_MAC_ADDR;
 
 // 在运行环境变量中设置设备名称
 process.env['BLENO_DEVICE_NAME'] = DEVICE_NAME;
@@ -200,9 +200,11 @@ function WxBLEService() {
 util.inherits(WxBLEService, BlenoPrimaryService);
 
 bleno.on('stateChange', function(state) {
+	// 获取设备MAC地址 <--------------------------------------------------------------------------[重要] 
+	DEVICE_MAC_ADDR = bleno.address.replace(/:/g,'');
 	console.log('\r\n');
 	console.log('------------------------------------------------------------------');
-	console.log('MAC=' + DEVICE_MAC_ADDR + ', DevName=' + DEVICE_NAME + ', LocalName=' + BLE_LOCAL_NAME);
+	console.log('MAC=' + bleno.address + ', DevName=' + DEVICE_NAME + ', LocalName=' + BLE_LOCAL_NAME);
 	console.log('------------------------------------------------------------------');
 	console.log('on -> stateChange ' + state);
 	if (state === 'poweredOn') {
