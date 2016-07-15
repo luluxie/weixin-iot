@@ -4,7 +4,7 @@
 
 * `zb-simulator.js`  摇一摇周边模拟器。可模拟真实的iBeacon设备，在微信摇一摇周边中出现。
 
-# 微信蓝牙协议模拟器
+# 蓝牙协议模拟器
 
 `ble-simulator.js`
 
@@ -67,7 +67,7 @@ var WERUN_TARGET_UUID = 'FEA2';
 
     https://api.weixin.qq.com/device/authorize_device?access_token=ACCESS_TOKEN
 
-# 微信摇一摇模拟器
+# 摇一摇模拟器
 
 `zb-simulator.js`
 
