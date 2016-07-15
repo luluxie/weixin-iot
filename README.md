@@ -1,4 +1,10 @@
-# 微信蓝牙协议模拟器
+## ble-simulator.js
+微信运动，微信蓝牙设备发现模拟器。可模拟微信运动步数上报，设备发现逻辑。
+
+## zb-simulator.js
+摇一摇周边模拟器。可模拟真实的iBeacon设备，在微信摇一摇周边中出现。
+
+# 微信蓝牙协议模拟器(ble-simulator.js)
 基于对微信AirSync蓝牙协议的理解写的模拟器，主要用于演示BLE设备与微信的通讯原理，方便其它开发者快速了解和上手。
 
 微信有专属的蓝牙`Service UUID`，同时还有指定的特征值要实现才能被微信识别和发现。如果是开发微信运动精简协议，还需要多两个特征值。
@@ -57,6 +63,33 @@ var WERUN_TARGET_UUID = 'FEA2';
   2.通过调用微信的授权接口将设备`MAC`更新到设备编号上。
 
     https://api.weixin.qq.com/device/authorize_device?access_token=ACCESS_TOKEN
+
+# 微信摇一摇iBeacon模拟器(zb-simulator.js)
+模拟一个标准的iBeacon设备，运行时可以在微信`摇一摇>周边`中出现。需要在微信摇一摇网站注册设备，并得到`UUID`,`Major`,`Minor`等参数才可以被微信识别。
+
+## 主要特性
+
+微信摇一摇
+  - 支持微信摇一摇周边
+
+## 使用方法
+### Step 1
+在微信摇一摇周边网站注册新的iBeacon设备，等待审核通过。
+
+    https://zb.weixin.qq.com/
+  
+审核通过后得到`UUID`,`Major`,`Minor`等参数，在zb-simulator.js中更新对应的三个参数。
+```javascript
+var uuid = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'; 
+var major = XXXXX; // 0x0000 - 0xffff
+var minor = XXXX; // 0x0000 - 0xffff
+```
+
+### Step 2
+
+    $ sudo node zb-simulator.js
+### Step 3
+打开微信进入`摇一摇`, 等待`周边`页面出现后摇一摇手机。即可摇出模拟的设备。
 
 ## 依赖
 
