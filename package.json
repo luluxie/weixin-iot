@@ -1,0 +1,27 @@
+{
+  "name": "weixin-iot",
+  "version": "1.0.0",
+  "description": "WeChat IoT developer utilities",
+  "main": "ble-simulator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luluxie/weixin-iot.git"
+  },
+  "keywords": [
+    "ble",
+    "simulator"
+  ],
+  "author": "luluxie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luluxie/weixin-iot/issues"
+  },
+  "homepage": "https://github.com/luluxie/weixin-iot#readme",
+  "dependencies": {
+    "bleadvertise": "^0.1.1",
+    "bleno": "^0.4.0"
+  }
+}
