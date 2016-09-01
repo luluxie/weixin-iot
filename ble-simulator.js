@@ -217,6 +217,7 @@ bleno.on('stateChange', function(state) {
 			// LOCAL NAME，AirSyncDebugger中扫描到的名称
 			completeName : BLE_LOCAL_NAME,
 			// 微信蓝牙协议Manufacturer Data固定结尾格式: XXXX(2 bytes) XXXXXXXXXXXX(6 bytes) <------[重要] 
+			// 微信iOS版本发现设备时以advertise data中的MAC为准，微信Android版本发现时以设备的物理MAC为准
 			mfrData : new Buffer(DEVICE_COMPANY_ID + DEVICE_MAC_ADDR, 'hex')
 		};
 		var advertisementData = parser.serialize(data);
