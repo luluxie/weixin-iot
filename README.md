@@ -122,13 +122,12 @@ Node.js modules
 * bleadvertise 版本 0.1.1
 
 ### 硬件环境
-
- | 参数
-------------- | -----------
-平台 | Raspberry Pi 2 Model B
-OS | Ubuntu 14.04.4
-内核 | 3.18.0-20-rpi2
-蓝牙模块 | CSR Bluetooth 4.0 USB module
+|项目|参数|
+|----|----|
+|平台 | Raspberry Pi 2 Model B|
+|OS | Ubuntu 14.04.4|
+|内核 | 3.18.0-20-rpi2|
+|蓝牙模块 | CSR Bluetooth 4.0 USB module|
  
 ## 备注
 AirSyncDebugger是微信提供的蓝牙协议调试工具。
